@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=PT+Sans&family=Pacifico&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "PT Sans", sans-serif;
+}
+body::before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+	background: rgba(175, 101, 204, 0.596);
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+}
+.logo img {
+	height: 60px;
+	padding: 5px;
+}
+nav ul {
+	display: flex;
+	width: 50vw;
+	list-style-type: none;
+	align-items: center;
+	justify-content: space-around;
+}
+
+nav a {
+	color: black;
+	text-decoration: none;
+	font-family: "Crete+Round", sans-serif;
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+nav a:hover {
+	color: rgb(49, 121, 255);
+}
+#main {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.left {
+	padding: 30px;
+}
+.right {
+	padding-top: 100px;
+}
+.title {
+	margin: 30px 0;
+	font-family: "Pacifico", cursive;
+	font-size: 4rem;
+	font-weight: normal;
+}
